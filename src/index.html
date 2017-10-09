@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)http://rundeck.org/ -->
+<html lang="en" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]--><!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]--><!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]--><!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!--><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"></style>
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="http://rundeck.org/favicon.ico">
+  <link rel="apple-touch-icon" href="http://rundeck.org/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="./rundeck_files/style.css">
+  <link rel="stylesheet" href="./rundeck_files/nav.css">
+  <link rel="stylesheet" href="./rundeck_files/960.css">
+  <link rel="stylesheet" type="text/css" href="./rundeck_files/skin.css">
+  <link rel="stylesheet" href="./rundeck_files/font-awesome.min.css">
+  <style type="text/css">
+  iframe.twitter-timeline{
+    height:300px;
+  }
+  </style>
+  <script async="" src="./rundeck_files/ga.js"></script><script id="twitter-wjs" src="./rundeck_files/widgets.js"></script><script src="./rundeck_files/modernizr-1.6.min.js"></script>
+      <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Job Scheduler and Runbook Automation | Rundeck.org</title>
+<meta property="og:title" content="Job Scheduler and Runbook Automation">
+<meta name="author" content="rundeck">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Rundeck - Job Scheduler and Runbook Automation">
+<meta property="og:description" content="Rundeck - Job Scheduler and Runbook Automation">
+<link rel="canonical" href="http://rundeck.org/">
+<meta property="og:url" content="http://rundeck.org/">
+<meta property="og:site_name" content="Rundeck.org">
+<meta property="og:image" content="http://rundeck.org/images/rundeck2-512.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@rundeck">
+<meta name="twitter:creator" content="@rundeck">
+<script type="application/ld+json">
+{"name":"Rundeck.org","description":"Rundeck - Job Scheduler and Runbook Automation","author":{"@type":"Person","name":"rundeck"},"@type":"WebSite","url":"http://rundeck.org/","image":"http://rundeck.org/images/rundeck2-512.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://rundeck.org/images/rundeck2-512.png"},"name":"rundeck"},"headline":"Job Scheduler and Runbook Automation","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<script type="text/javascript" charset="utf-8" async="" src="./rundeck_files/timeline.9abf139d50bf8058a048c5241da351bd.js"></script></head>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+
+<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+  <div id="container">
+    <nav class="top">
+      <ul class="container_12">
+    <li class="item index grid_4 alpha">
+    <a href="http://rundeck.org/index.html">
+      <h1>
+        <img src="./rundeck_files/rundeck2-icon-16.png">
+        Rundeck</h1>
+      <p class="rd_version">Job Scheduler and Runbook Automation</p>
+      </a>
+    </li>
+
+<!--    <li class="item about grid_2">
+      <a href="http://rundeck.org/about.html">
+        <h1>About</h1>
+        <p>Tour, News, Videos</p>
+      </a>
+    </li>
+  -->
+    <li class="item help grid_2">
+      <a href="http://rundeck.org/help.html">
+        <h1>Get Help</h1>
+        <p>Docs, Community</p>
+      </a>
+    </li>
+    <li class="item plugins grid_2">
+      <a href="http://rundeck.org/plugins/index.html">
+        <h1>Plugins</h1>
+        <p>Integrate Rundeck</p>
+      </a>
+    </li>
+    <li class="item downloads grid_2 omega">
+    <a href="https://www.rundeck.com/download-page">
+      <h1>Download</h1>
+      <p class="rd_version">2.9.3</p>
+      </a>
+    </li>
+    <li class="item upgrade grid_2">
+      <a href="https://www.rundeck.com/rundeck-pro">
+        <h1>Upgrade ➤</h1>
+        <p>Get <span class="rdstyle">Rundeck PRO</span></p>
+      </a>
+    </li>
+    <div class="clear"></div>
+</ul>
+
+    </nav>
+    <div class="container_12 searchbox">
+    <div class="grid_4 prefix_8">
+        <form action="http://rundeck.org/search/">
+            <input type="search" name="q">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+<div class="clear"></div>
+</div>
+
+    <section>
+
+    
+<div class="container_12 introduction">
+<div class="grid_12">
+<img src="./rundeck_files/rundeck-logotype-512.png" alt="Rundeck Logo" style="display:block; margin-left:auto; margin-right:auto;">
+</div>
+<div class="grid_5" style="margin: 35px 0 0 0"><img src="./rundeck_files/rundeck-screen-400w.png" width="375 px" style="padding-left: 20px;"></div>
+<div class="grid_7" style="margin: 45px 0 0 0">
+<p style="margin: 0 10px 0px 40px;  font-size: 160%; font-weight: bold;">Go Fast. Be Secure.</p>
+<p style="margin: 10px 10px 0px 40px; font-size: 125%;">Turn your operations procedures into self-service jobs.</p>
+<p style="margin: 10px 10px 0px 40px; font-size: 125%;">Safely give others the control and visibility they need.</p>
+<p style="margin: 15px 10px 0px 40px;">"<span style="font-style:italic;">...the swiss army knife for ops.</span>" <span style="font-size: 80%"><a href="http://rundeck.org/#casestudies"> -Jordan Koch</a></span> </p>
+<p style="margin: 5px 10px 0px 40px;">"<span style="font-style:italic;">...essential tool for getting operations under control.</span>" <span style="font-size: 80%"><a href="http://rundeck.org/#casestudies"> -John D'Esposito</a></span> </p>
+</div>
+
+<div class="clear"></div>
+<div class="grid_3 prefix_3" style="margin: 20px 10px 0 0">
+<a class="button-large" href="https://www.rundeck.com/download-page">Download Rundeck</a>
+</div>
+<div class="grid_3 suffix_3" style="margin: 20px 0 0 10px">
+<a class="button-large" href="https://www.rundeck.com/rundeck-pro">Try Rundeck Pro</a>
+</div>
+
+<div class="clear"></div>
+
+</div>
+
+
+	
+
+
+</section>
+
+
+<section>
+    <article class="container_12">
+  <div class="grid_6 newsbox" style="padding: 10px 0">
+	<h2>Latest Rundeck News</h2>
+	<ul class="newslist">
+  
+    <li>
+      <a href="http://rundeck.org/news/2017/08/25/rundeck-2.9.3.html">Rundeck 2.9.3 is now available</a>
+    </li>
+  
+    <li>
+      <a href="http://rundeck.org/news/2017/08/10/rundeck-usage-survey.html">Take the Rundeck usage survey and win cool suff.</a>
+    </li>
+  
+    <li>
+      <a href="http://rundeck.org/news/2017/08/07/rundeck-2.9.2.html">Rundeck 2.9.2 is now available</a>
+    </li>
+  
+    <li>
+      <a href="http://rundeck.org/news/2017/08/04/rundeck-2.9.1.html">Rundeck 2.9.1 is now available</a>
+    </li>
+  
+    <li>
+      <a href="http://rundeck.org/news/2017/08/03/rundeck-2.9.0.html">Rundeck 2.9.0 is now available</a>
+    </li>
+  
+    <li>
+      <a href="http://rundeck.org/news/2017/07/13/rundeck-2.8.4.html">Rundeck 2.8.4 is now available</a>
+    </li>
+  
+  <li>
+    <a href="http://rundeck.org/news/">More…</a>
+  </li>
+</ul>
+</div>
+
+<!-- twitter timeline widget managed by @rundeck account  -->
+<div class="grid_6" style="padding: 10px 0">
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 520px; height: 350px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="636037014563897347" title="Twitter Timeline" src="./rundeck_files/saved_resource.html"></iframe> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+
+<!-- old twitter timeline widget
+<div class="grid_6" style="padding: 10px 0">
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/Rundeck" data-widget-id="426903294401728512">Tweets by @Rundeck</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+-->
+
+<div class="clear"></div>
+</article>
+</section>
+
+<section>
+<article class="about container_12">
+<!-- <section> -->
+    
+<div class="background-gray">
+      <div class="grid_12">
+<h3 id="LearnMore">How to Use Rundeck</h3>
+</div>
+<div class="grid_1">
+<span class="icon-stack" style="font-size: 35px;">
+            <i class="icon-circle icon-stack-base" style="color: #005C8E"></i>
+            <i class="icon-notanicon" style="color:white; font-size: 120%">1</i>
+</span>
+</div> 
+<div class="grid_11">
+<p><strong>Create a job</strong> by defining a single step or a workflow that can execute any set of commands, scripts, or tools on any number of local or remote nodes. Jobs can be <a href="http://rundeck.org/job-scheduler/">triggered by the scheduler</a> or on-demand via the web interface or API.</p>
+<p style="text-align:center"><img src="./rundeck_files/Rundeck-EditJob.png" width="500"></p>
+</div>
+<div class="clear"></div>
+<br>
+
+<div class="grid_1">
+<span class="icon-stack" style="font-size: 35px;">
+            <i class="icon-circle icon-stack-base" style="color: #005C8E"></i>
+            <i class="icon-notanicon" style="color:white; font-size: 120%">2</i>
+</span>
+</div> 
+<div class="grid_11">
+<p><strong>Safely hand off the job to others</strong> to execute or follow the output -- depending on the permissions you give them. Collaborate with others and build your organization's library of repeatable and auditable actions. You can also let users to run ad-hoc commands (if your security policies allow it).</p>
+<p style="text-align:center"><img src="./rundeck_files/Rundeck-JobExecution.png" width="500"></p>
+</div>
+<div class="clear"></div>
+<br>
+
+<div class="grid_1">
+<span class="icon-stack" style="font-size: 35px;">
+            <i class="icon-circle icon-stack-base" style="color: #005C8E"></i>
+            <i class="icon-notanicon" style="color:white; font-size: 120%">3</i>
+</span>
+</div> 
+<div class="grid_11">
+<p><strong>Enjoy being the Hero.</strong> You've safely given Dev and QA teams access to self-service operations tasks (deployments, restarts, data management, etc). You've made collaboration with your Operations colleagues easier. You've improved everyone's visibility into Operations activity. Now you can spend less of your time fielding repetitive requests and more of your time doing new and interesting things that will further the business.</p>
+<p style="text-align:center"><img src="./rundeck_files/hero.jpg" width="499"></p>
+</div>
+<div class="clear"></div>
+<p>&nbsp;</p>
+</div>
+
+<div>
+<div class="grid_12">
+<h3>Popular Uses</h3>
+<br>
+</div>
+<div class="grid_3 prefix_1">
+<img src="./rundeck_files/rundeckuse_standardprocedure.png" alt="Use Rundeck to define standard operating procedures" width="300">
+</div>
+			
+<div class="grid_7 prefix_1">
+<h2>Share Standard Operating Procedures<br> 
+	<span style="font-size: 80%;">(Runbook Automation)</span></h2>
+<p>Build up a common set of reusable procedures. Share those procedures with others as executable code rather than error prone "do this, then that" text files or checklists. <a href="http://rundeck.org/runbook-automation/">(more...)</a></p><p></p>
+</div>
+<div class="clear"></div>
+
+
+<br>
+<br>
+<div class="grid_3 prefix_1">
+<img src="./rundeck_files/rundeckuse_jobscheduler.png" alt="Use Rundeck as a job scheduler" width="300">
+</div>
+<div class="grid_7 prefix_1">
+<h2>Job Scheduler</h2>
+<p>Use Rundeck as an easier to manage and more secure replacement for Cron or as a replacement for legacy tools like Control-M or HP Operations Orchestration. Rundeck gives your users a simple web interface (GUI or API) to go to for both on-demand and scheduled operations tasks. <a href="http://rundeck.org/job-scheduler/">(more...)</a></p>
+</div>
+<div class="clear"></div>
+
+<br>
+<br>
+<div class="grid_3 prefix_1">
+<img src="./rundeck_files/rundeckuse_incidentmanagement.png" alt="Use Rundeck as a job scheduler" width="300">
+</div>
+<div class="grid_7 prefix_1">
+<h2>Incident Response</h2>
+<p>Reduce MTTR, reduce escalations, and lower total support costs. Collaborate on the definition of standard operating procedures. Make it simple for a response team to run both standard operating procedures and ad-hoc commands as needed. Safely pull in subject matter experts to resolve problems in environments to which you otherwise couldn't give them access. Integrate with monitoring and ticket systems. Satisfy auditors because Rundeck logs all activity. </p>
+</div>
+<div class="clear"></div>
+
+
+<br>
+<br>
+<div class="grid_3 prefix_1">
+<img src="./rundeck_files/rundeckuse_zeroclickdeploy.png" alt="Use Rundeck for automated deployment" width="300">
+</div>
+<div class="grid_7 prefix_1">
+<h2>Automated Deployment After a Build</h2>
+<p>Move towards Continuous Delivery by having your build or CI server trigger Rundeck to execute the post-build deployment process and deployment verification testing. Reuse those same jobs to deploy across all environments automatically (zero-click) or with a manual trigger (one-click).</p>
+</div>
+<div class="clear"></div>
+
+<br>
+<br>
+<div class="grid_3 prefix_1">
+<img src="./rundeck_files/rundeckuse_testenvs.png" alt="Use Rundeck to enable self-service test environments" width="300">
+</div>
+<div class="grid_7 prefix_1">
+<h2>Self-Service Test Environments</h2>
+<p>Provide Dev and QA with self-service provisioning of test environments. Use Rundeck's option providers to allow users to select specific versions of artifacts to deploy. Pair with virtualization or cloud infrastructure to allow techniques like short-lived, branch-specific test environments.</p>
+</div>
+<div class="clear"></div>
+
+<br>
+<br>
+<div class="grid_3 prefix_1">
+<img src="./rundeck_files/rundeckuse_dataprocessingaws.png" alt="Use Rundeck to managae data processing jobs in the cloud" width="300">
+</div>
+<div class="grid_7 prefix_1">
+<h2>Data Processing Jobs in the Cloud</h2>
+<p>Coordinate the lifecycle of a data processing job, including the provisioning and de-provisioning of the supporting cloud infrastructure. Rundeck's Web-UI and ACL policies enable you to safely delegate to non-technical users the ability to kick-off and view data processing jobs.</p>
+</div>
+<div class="clear"></div>
+
+<br>
+<br>
+<div class="grid_3 prefix_1">
+<img src="./rundeck_files/rundeckuse_poweredby.png" alt="Use Rundeck to build custom ops platforms and tools" width="300">
+</div>			
+<div class="grid_7 prefix_1">
+<h2>Custom Platforms "Powered By Rundeck"</h2>
+<p>Build a custom Operations Platform that leverages Rundeck's full featured API. Integrate with other tools, build your own plugins, and build your own business-specific UI.</p>
+</div>
+<div class="clear"></div>
+
+</div>
+
+
+
+<div class="background-gray">
+<div class="grid_12">
+
+<h3 id="casestudies">Rundeck Case Studies</h3>
+<br>
+</div>
+<div class="clear"></div>
+
+<!-- Start John D'Esposito case study -->
+<div class="grid_2 prefix_1">
+<a href="http://rundeck.org/stories/john_desposito.html"><img src="./rundeck_files/JohnDEsposito.jpg" alt="John D&#39;Esposito" width="200"></a>
+</div>			
+<div class="grid_8 prefix_1">
+<h2><a href="http://rundeck.org/stories/john_desposito.html">John D'Esposito Implements ChatOps for Financial Services</a></h2>
+<p>When companies want to get the most out of their Cloud infrastructure investment, New York based Devopulence is called in to help rethink and retool operations. Rundeck is used as a key part of their ChatOps and Incident Response solutions.<br><a href="http://rundeck.org/stories/john_desposito.html">(read more...)</a></p>
+</div>
+<div class="clear"></div>
+<!-- End John D'Esposito case study-->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<!-- Start Jordan Koch case study -->
+<div class="grid_2 prefix_1">
+<a href="http://rundeck.org/stories/jordan_koch.html"><img src="./rundeck_files/JordanKoch.jpg" alt="Jordan Koch - Disney" width="200"></a>
+</div>			
+<div class="grid_8 prefix_1">
+<h2><a href="http://rundeck.org/stories/jordan_koch.html">Jordan Koch from Disney</a></h2>
+<p>Rundeck is a key tool in the toolbox for Jordan Koch and his Systems Engineering colleagues. As with any diverse and expanding organization, this team realized that they needed both standard operating procedures and way to safely give people on other teams self-service access to those procedures.<br><a href="http://rundeck.org/stories/jordan_koch.html">(read more...)</a></p>
+</div>
+<div class="clear"></div>
+<!-- End Jordan Koch case study-->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<!-- Start Mark Maun case study -->
+<div class="grid_2 prefix_1">
+<a href="http://rundeck.org/stories/mark_maun.html.html"><img src="./rundeck_files/MarkMaun.jpg" alt="Mark Maun - Ticketmaster" width="200"></a>
+</div>			
+<div class="grid_8 prefix_1">
+<h2><a href="http://rundeck.org/stories/mark_maun.html">Mark Maun at Ticketmaster</a></h2>
+<p>Mark uses Rundeck to enable a single team to safely deploy applications across environments and empower support teams to take action to resolve issues immediately. Mark has used Rundeck to enable initiatives that have reduced escalations by 30% - 40%, overall support incident costs by 55%, and reduced mean time to repair (MTTR) by 50% - 150% per service.<br><a href="http://rundeck.org/stories/mark_maun.html">(read more...)</a></p>
+</div>
+<div class="clear"></div>
+<!-- End Mark Maun case study -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<!-- Start Prakash case study -->
+<div class="grid_2 prefix_1">
+<a href="http://rundeck.org/stories/prakash_rudraraju.html"><img src="./rundeck_files/PrakashScreen.jpg" alt="Prakash Rudraraju - Data.com" width="200"></a>
+</div>			
+<div class="grid_8 prefix_1">
+<h2><a href="http://rundeck.org/stories/prakash_rudraraju.html">Prakash Rudraraju at Data.com</a></h2>
+<p>Prakash uses Rundeck to: 1. provide visibility into deployments in secure production environments 2. safely enable self-service capabilities that protect the capacity of the TechOps Team 3. improve the ease of patching and routine maintenance by leveraging a library of repeatable procedures.<br><a href="http://rundeck.org/stories/prakash_rudraraju.html">(read more...)</a></p>
+</div>
+<div class="clear"></div>
+<!-- End Prakash case study -->
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!-- Start Salesforce case study -->
+<div class="grid_2 prefix_1">
+<a href="http://rundeck.org/stories/salesforce_gigantor.html"><img src="./rundeck_files/Gigantor_RundeckSalt.png" alt="Gigantor stack - Salesforce.com" width="200"></a>
+</div>                  
+<div class="grid_8 prefix_1">
+<h2><a href="http://rundeck.org/stories/salesforce_gigantor.html">Gigantor Project at Salesforce.com</a></h2>
+<p>As one of the world's largest cloud based business services, Salesforce.com needs high-scale and high-velocity operations. Rundeck is one of the key operations tools that lets them do just that. The Salesforce.com team took a toolchain approach that features Rundeck, SaltStack, and a custom internal tool called Kingpin.<br><a href="http://rundeck.org/stories/salesforce_gigantor.html">(read more...)</a></p>
+</div>
+<div class="clear"></div>
+<!-- End Salesforce case study -->
+
+
+<p>&nbsp;</p>
+</div>
+
+<div>
+<br>
+<div class="grid_12">
+<a class="button-large centered-element" href="https://www.rundeck.com/download-page">Download Rundeck</a>
+<p class="centered" style="font-size: 80%;"><a href="http://rundeck.org/docs.html">or<br>View the Rundeck Documentation</a></p>
+</div>
+<div class="clear"></div>
+</div>
+
+<!-- </section> -->
+
+<div class="clear"></div>
+</article>
+</section>
+
+    
+    <footer>
+
+    <a href="http://rundeck.org/index.html">home</a> 
+    -
+    <a href="http://rundeck.org/news">news</a> 
+    -
+    <a href="http://groups.google.com/group/rundeck-discuss">rundeck-discuss</a>
+    -
+    <a href="http://webchat.freenode.net/?nick=rundeckuser.&amp;channels=rundeck&amp;prompt=1">#rundeck</a>
+    -
+    <a href="https://twitter.com/rundeck">@rundeck</a>
+    -
+    <a href="https://github.com/rundeck/rundeck/issues">Github Issues</a>
+    -
+    <a href="http://rundeck.org/docs">Documentation</a>
+    -
+    <a href="http://rundeck.org/docs/api/index.html">API</a>
+    -
+    <a href="https://rundeck.github.io/rundeck-cli/">CLI</a>
+
+<div>
+<a class="btn greenLight" href="http://rundeck.com/services">
+<i class="glyphicon glyphicon-plus icon-plus"></i>
+Add a New Feature to Rundeck
+</a>
+<div>
+
+</div></div></footer>
+
+  </div> <!--! end of #container -->
+
+
+  <!-- Javascript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="./rundeck_files/jquery.min.js"></script>
+  <script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
+
+
+
+  <script src="./rundeck_files/plugins.js"></script>
+  <script src="./rundeck_files/script.js"></script>
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); </script>
+  <![endif]-->
+
+  <script type="text/javascript" src="./rundeck_files/jquery.jcarousel.min.js"></script>
+
+  
+    
+  <script type="text/javascript">
+  
+
+   var _gaq = [['_setAccount', 'UA-529275-13'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+    <script>
+        $(document).ready(function () {
+            var page=$('section.page');
+            var ident=$(page).attr('id');
+            $('nav li.item.'+ident).addClass('selected');
+        });
+    </script>
+
+    <script src="./rundeck_files/jquery.outbound-analytics.min.js"></script>
+<script>
+jQuery(function($) {
+  $.outboundAnalytics();
+  $('#downloads').outboundAnalytics({'category':'Downloads'});
+});
+</script>
+
+  <script type="text/javascript">
+  
+    function scroll(pos) {
+      var carousel = $('#movies').data('jcarousel')
+      carousel.scroll(pos);
+      return false;
+    }
+  
+    function mycarousel_initCallback(carousel)
+    {
+        // Disable autoscrolling if the user clicks the prev or next button.
+        carousel.buttonNext.bind('click', function() {
+            carousel.startAuto(0);
+        });
+
+        carousel.buttonPrev.bind('click', function() {
+            carousel.startAuto(0);
+        });
+
+        // Pause autoscrolling if the user moves with the cursor over the clip.
+        carousel.clip.hover(function() {
+            carousel.stopAuto();
+        }, function() {
+            carousel.startAuto();
+        });
+    };
+    $(document).ready(function() {
+      $('#movies').jcarousel({
+        'scroll':1,
+        'visible':1,
+        auto: 8,
+        animation:'slow',
+        wrap: 'last',
+        initCallback: mycarousel_initCallback
+      });
+    });
+
+  </script>
+  
+
+
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./rundeck_files/saved_resource(1).html"></iframe></body></html>
